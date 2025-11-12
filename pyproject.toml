@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "framework-cg"
+version = "0.1.0"
+description = "Mini framework de ETL para Postgres + Pandas (logging integrado, extract/query, upsert batelado)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{ name = "Lívia Torres Medeiros Pinheiro" }]
+
+dependencies = [
+  "pandas>=2.1",
+  "numpy>=1.26",
+  "psycopg2-binary>=2.9",
+  "python-dotenv>=1.0",
+  "unidecode>=1.3",
+]
